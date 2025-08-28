@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center px-4">
       {/* ✅ Profile Photo */}
       <img
-        src="/profile.jpg"   // profile photo from public/profile.jpg
+        src="profile.jpg"   // profile photo from public/profile.jpg
         alt="Paramesh Profile"
         className="w-40 h-40 rounded-full shadow-lg border-4 border-white mb-6"
       />

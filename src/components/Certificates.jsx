@@ -11,7 +11,7 @@ const certificates = [
   },
   {
     name: "Full Stack Web Development Course Completion",
-    file: "certificates/cource.pdf",
+    file: "certificates/course.pdf",
     description:
       "Course completion certificate for Full Stack Web Development, covering HTML, CSS, JavaScript, React, Node.js, and database management.",
   },
