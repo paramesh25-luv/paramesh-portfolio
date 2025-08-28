@@ -65,32 +65,12 @@ function Certificates() {
                 {cert.name}
               </h3>
               <p className="text-gray-600 mb-4">{cert.description}</p>
-              {/* Use object data for iframe and fallback message */}
-              <iframe
+              <img
                 src={cert.file}
-                title={cert.name}
-                className="w-full h-96 rounded-lg border"
+                alt={cert.name}
+                className="w-full h-auto rounded-lg border object-contain"
                 loading="lazy"
-              >
-                <p>
-                  Your browser does not support iframes.{" "}
-                  <a
-                    href={cert.file}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View PDF
-                  </a>
-                </p>
-              </iframe>
-              <a
-                href={cert.file}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-4 text-indigo-600 hover:underline"
-              >
-                View PDF
-              </a>
+              />
             </motion.div>
           ))}
         </div>
