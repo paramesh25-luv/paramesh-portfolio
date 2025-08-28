@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "LoRa-based Cycle Speedometer",
+    title: "Fake News Detection with NLP",
     description:
-      "A wireless speedometer system using LoRa SX1278 and microcontrollers to measure and display real-time cycle speed over long distances. Designed for reliable low-power communication.",
+      "Developed NLP models (LSTM and BERT) to classify news as real or fake. Preprocessing text, training models, and evaluating performance metrics for accuracy and F1-score.",
   },
   {
     title: "LoRa Walkie-Talkie",
@@ -18,11 +18,11 @@ const projects = [
       "Smart control of ceiling fans and bulbs using ESP32, SPST manual switches, IoT cloud integration, and Google Assistant voice commands. Features timer-based relay automation.",
   },
   {
-    title: "Fake News Detection with NLP",
+    title: "LoRa-based Cycle Speedometer",
     description:
-      "Developed NLP models (LSTM and BERT) to classify news as real or fake. Preprocessing text, training models, and evaluating performance metrics for accuracy and F1-score.",
+      "A wireless speedometer system using LoRa SX1278 and microcontrollers to measure and display real-time cycle speed over long distances. Designed for reliable low-power communication.",
   },
-  {
+ {
     title: "Industrial Experience",
     description:
       "Visited IV at Chennai and DM50 Thor Plant at Ambur. Hands-on exposure to Auto-transformers, PID Controllers, LDC Signal Conditioners, and industrial control systems.",
