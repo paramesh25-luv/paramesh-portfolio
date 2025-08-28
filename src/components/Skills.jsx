@@ -5,11 +5,12 @@ const Skills = () => {
     {
       category: "Programming & Development",
       items: [
-        "Python (NLP, ML, PyTorch, Data Science)",
-        "Java (Web & Android Development)",
-        "HTML, CSS, JavaScript, React, Node.js",
-        "MySQL & Database Management",
+        "Python (NLP, Numpy, Pandas, Matplotlib, Data Science)",
+        "Java (Basic-Beginner)",
+        "HTML, CSS, JavaScript, React, Node.js(Beginner)",
+        "MySQL & Database Management(Inermediate)",
         "PCB Design (EasyEDA)",
+        "VLSI Design (Beginner)",
       ],
     },
     {

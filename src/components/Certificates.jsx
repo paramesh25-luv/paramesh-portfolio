@@ -1,32 +1,38 @@
 import React from "react";
 import { motion } from "framer-motion";
 
+// Use relative paths (no leading slash) for GitHub Pages compatibility
 const certificates = [
   {
     name: "TechSaksham IR 4.0 Foundation Course",
-    file: "/certificates/techsaksham.pdf",
-    description: "Certificate for completing the IR 4.0 Foundation Course by TechSaksham, focusing on Industry 4.0 technologies and digital skills."
+    file: "certificates/techsaksham.pdf",
+    description:
+      "Certificate for completing the IR 4.0 Foundation Course by TechSaksham, focusing on Industry 4.0 technologies and digital skills.",
   },
   {
     name: "Full Stack Web Development Course Completion",
-    file: "/certificates/cource.pdf",
-    description: "Course completion certificate for Full Stack Web Development, covering HTML, CSS, JavaScript, React, Node.js, and database management."
+    file: "certificates/cource.pdf",
+    description:
+      "Course completion certificate for Full Stack Web Development, covering HTML, CSS, JavaScript, React, Node.js, and database management.",
   },
   {
     name: "Industrial Visit Certificate – Kashiv Info Tech",
-    file: "/certificates/iv.pdf",
-    description: "Certificate for participating in an industrial visit at Kashiv Info Tech company, gaining insights into industry practices and technologies."
+    file: "certificates/iv.pdf",
+    description:
+      "Certificate for participating in an industrial visit at Kashiv Info Tech company, gaining insights into industry practices and technologies.",
   },
   {
     name: "Award – 2nd Rank Holder in ECE Dept",
-    file: "/certificates/award.pdf",
-    description: "Awarded for securing 2nd rank in the Electronics and Communication Engineering department at my college."
+    file: "certificates/award.pdf",
+    description:
+      "Awarded for securing 2nd rank in the Electronics and Communication Engineering department at my college.",
   },
   {
     name: "Internship Certificate – TVS, Polambakkam",
-    file: "/certificates/internship.pdf",
-    description: "Certificate for successfully completing an internship at TVS, Polambakkam, with hands-on experience in industry projects."
-  }
+    file: "certificates/internship.pdf",
+    description:
+      "Certificate for successfully completing an internship at TVS, Polambakkam, with hands-on experience in industry projects.",
+  },
 ];
 
 function Certificates() {
@@ -59,11 +65,24 @@ function Certificates() {
                 {cert.name}
               </h3>
               <p className="text-gray-600 mb-4">{cert.description}</p>
+              {/* Use object data for iframe and fallback message */}
               <iframe
                 src={cert.file}
                 title={cert.name}
                 className="w-full h-96 rounded-lg border"
-              ></iframe>
+                loading="lazy"
+              >
+                <p>
+                  Your browser does not support iframes.{" "}
+                  <a
+                    href={cert.file}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View PDF
+                  </a>
+                </p>
+              </iframe>
               <a
                 href={cert.file}
                 target="_blank"
