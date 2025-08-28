@@ -2,7 +2,7 @@
   "name": "paramesh-portfolio",
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://paramesh25-luv.github.io/paramesh-portfolio", // <-- Replace with your actual GitHub username and repo name
+  "homepage": "https://paramesh25-luv.github.io/paramesh-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
