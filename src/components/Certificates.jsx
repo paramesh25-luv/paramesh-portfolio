@@ -2,10 +2,31 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const certificates = [
-  { name: "Internship Certificate", file: "/certificates/internship.pdf" },
-  { name: "Industrial Visit Certificate", file: "/certificates/iv-chennai.pdf" },
-  { name: "Award – 2nd Rank in ECE Dept", file: "/certificates/award.pdf" },
-  { name: "Plant Visit Certificate", file: "/certificates/plant-visit.pdf" },
+  {
+    name: "TechSaksham IR 4.0 Foundation Course",
+    file: "/certificates/techsaksham.pdf",
+    description: "Certificate for completing the IR 4.0 Foundation Course by TechSaksham, focusing on Industry 4.0 technologies and digital skills."
+  },
+  {
+    name: "Full Stack Web Development Course Completion",
+    file: "/certificates/cource.pdf",
+    description: "Course completion certificate for Full Stack Web Development, covering HTML, CSS, JavaScript, React, Node.js, and database management."
+  },
+  {
+    name: "Industrial Visit Certificate – Kashiv Info Tech",
+    file: "/certificates/iv.pdf",
+    description: "Certificate for participating in an industrial visit at Kashiv Info Tech company, gaining insights into industry practices and technologies."
+  },
+  {
+    name: "Award – 2nd Rank Holder in ECE Dept",
+    file: "/certificates/award.pdf",
+    description: "Awarded for securing 2nd rank in the Electronics and Communication Engineering department at my college."
+  },
+  {
+    name: "Internship Certificate – TVS, Polambakkam",
+    file: "/certificates/internship.pdf",
+    description: "Certificate for successfully completing an internship at TVS, Polambakkam, with hands-on experience in industry projects."
+  }
 ];
 
 function Certificates() {
@@ -34,14 +55,23 @@ function Certificates() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.2 }}
             >
-              <h3 className="text-lg font-semibold text-gray-800 mb-4">
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">
                 {cert.name}
               </h3>
+              <p className="text-gray-600 mb-4">{cert.description}</p>
               <iframe
                 src={cert.file}
                 title={cert.name}
                 className="w-full h-96 rounded-lg border"
               ></iframe>
+              <a
+                href={cert.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-4 text-indigo-600 hover:underline"
+              >
+                View PDF
+              </a>
             </motion.div>
           ))}
         </div>
