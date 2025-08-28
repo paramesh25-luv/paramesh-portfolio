@@ -5,31 +5,31 @@ import { motion } from "framer-motion";
 const certificates = [
   {
     name: "TechSaksham IR 4.0 Foundation Course",
-    file: "certificates/techsaksham.pdf",
+    file: "certificates/techsaksham.jpg",
     description:
       "Certificate for completing the IR 4.0 Foundation Course by TechSaksham, focusing on Industry 4.0 technologies and digital skills.",
   },
   {
     name: "Full Stack Web Development Course Completion",
-    file: "certificates/course.pdf",
+    file: "certificates/course.jpg",
     description:
       "Course completion certificate for Full Stack Web Development, covering HTML, CSS, JavaScript, React, Node.js, and database management.",
   },
   {
     name: "Industrial Visit Certificate – Kashiv Info Tech",
-    file: "certificates/iv.pdf",
+    file: "certificates/iv.jpg",
     description:
       "Certificate for participating in an industrial visit at Kashiv Info Tech company, gaining insights into industry practices and technologies.",
   },
   {
     name: "Award – 2nd Rank Holder in ECE Dept",
-    file: "certificates/award.pdf",
+    file: "certificates/award.jpg",
     description:
       "Awarded for securing 2nd rank in the Electronics and Communication Engineering department at my college.",
   },
   {
     name: "Internship Certificate – TVS, Polambakkam",
-    file: "certificates/internship.pdf",
+    file: "certificates/internship.jpg",
     description:
       "Certificate for successfully completing an internship at TVS, Polambakkam, with hands-on experience in industry projects.",
   },
